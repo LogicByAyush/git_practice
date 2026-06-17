@@ -10,9 +10,8 @@ for i in range(elem):
 for i in range(elem):
     for j in range(i+1, elem):
         if number[i] > number[j]:
-            temp = number[i]
-            number[i] = number[j]
-            number[j] = temp
+            if number[i] > number[j]:
+                number[i], number[j] = number[j], number[i]
 
 for i in range(elem):
     print(f"{number[i]}", end=" ")
