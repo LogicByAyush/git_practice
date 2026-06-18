@@ -1,15 +1,15 @@
-import random
-secret = random.randint(1, 100)
-print("Welcome to the Number Guessing Game!")
-print("Guess a number between 1 and 100")
+num1 = int(input("Enter a number: "))
+num = num1
+le = len(str(num)) 
+arm = 0 
+ 
 
-while True:
-    guess = int(input("Enter your guess: "))
-    
-    if guess < secret:
-        print("Too low!")
-    elif guess > secret:
-        print("Too high!")
-    else:
-        print("Congratulations! You guessed it.")
-        break
+while (num1 > 0):
+    dig = num1 % 10 
+    arm += dig ** le 
+    num1 = num1 // 10
+
+if num == arm:
+    print("Armstrong number")
+else:
+    print("Not Armstrong number")
