@@ -1,8 +1,8 @@
 # list_frequency_count.py
-def counting(number, targat):
+def counting(number, target):
     count = 0
     for num in number:
-        if num == targat:
+        if num == target:
           count += 1
     return count
 

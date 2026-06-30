@@ -1,6 +1,6 @@
 # list_remove_duplicates.py
 number = []
-simpal = []
+unique = []
 size = int(input("Enter the size of list: "))
 
 for i in range(size):
@@ -10,7 +10,7 @@ for i in range(size):
 print(f"Your list is {number}")
 
 for num in number:
-    if num not in simpal:
-        simpal.append(num)
+    if num not in unique:
+        unique.append(num)
 
-print(f"After deleted all duplicates the list is now {simpal}")
+print(f"After deleted all duplicates the list is now {unique}")
