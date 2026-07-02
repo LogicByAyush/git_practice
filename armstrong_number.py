@@ -1,15 +1,16 @@
-num1 = int(input("Enter a number: "))
-num = num1
-le = len(str(num)) 
-arm = 0 
- 
+#Q10_Armstrong_Number.py
+num = int(input("Enter the number: "))
+number = num
 
-while (num1 > 0):
-    dig = num1 % 10 
-    arm += dig ** le 
-    num1 = num1 // 10
+digit = len(str(number))
+armstrong = 0
 
-if num == arm:
+while num > 0:
+    last = num % 10
+    armstrong += pow(last, digit)
+    num //= 10
+
+if number == armstrong:
     print("Armstrong number")
 else:
-    print("Not Armstrong number")
+    print("Not an armstrong number")
